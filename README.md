@@ -105,22 +105,13 @@ This application does external Authentication with Azure AD. Use Azure Active Di
       git clone https://github.com/RobinGhoshATL/react-2-nodejs.git
       cd react-2-nodejs 
       ```
-2. Create new file with name `.env.local`. Copy all the content from `.env.local.sample` file and paste it in `.env.local` file.
-
-3. Substitute `VUE_APP_CLIENT_ID` in `.env.local` file.
-Get your `VUE_APP_CLIENT_ID` from your app registration in Azure Active Directory.
-Substitute `VUE_APP_BACKEND_BASE_URL` as `https://nodejs-be-protected.azurewebsites.net/api/`.
+2. Create new file with name `.env`
+Substitute `REACT_APP_API_URL` with `https://nodejs-be-protected.azurewebsites.net/api/`.
 
       ```bash
-     VUE_APP_CLIENT_ID="CHANGE_ME"
-     VUE_APP_BACKEND_BASE_URL="CHANGE_ME"
+     REACT_APP_API_URL="CHANGE_ME"
 
       ```   
-4. Run `npm install` in a terminal to install required npm modules
-
-5. Run `npm run serve` in a terminal to start your vue.js application.  Navigate to `http://localhost:8080/`. If you change any of the source files, you should restart your application again.
-
-CONGRATULATIONS. If you are redirect to Microsoft login page and after login redirect to dashboard page, you are successfully run this application locally.
 
 ## Build
 
@@ -133,7 +124,7 @@ Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+You will also see any lint errors in the console.  CONGRATULATIONS. If you are redirected to Microsoft login page and after login redirect to dashboard page, you have  successfully run this application locally.
 
 ### `yarn test`
 
